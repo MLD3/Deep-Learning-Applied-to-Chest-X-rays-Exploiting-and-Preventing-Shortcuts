@@ -1,0 +1,18 @@
+
+
+lr : &lr [1.0e-2, 1.0e-1,1.0e-3]
+
+batch_size : &batch_size [32]
+
+momentum : &momentum [0.8, 0.9]
+
+augmentation : &augmentation [[rotate]] 
+
+
+model_name : {
+    'lr' : *lr, 
+    'batch_size' : *batch_size, 
+    'augmentation' : *augmentation, 
+    'momentum' : *momentum, 
+}
+
